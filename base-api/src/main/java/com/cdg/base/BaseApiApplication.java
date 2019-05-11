@@ -1,9 +1,11 @@
-package com.cdg.basetemplate.baseapi;
+package com.cdg.base;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EnableJpaRepositories("com.cdg.base")
 public class BaseApiApplication {
 
 	public static void main(String[] args) {
